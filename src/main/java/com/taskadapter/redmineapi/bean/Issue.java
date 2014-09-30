@@ -37,6 +37,7 @@ public class Issue implements Identifiable {
     private String statusName;
     private Version targetVersion;
     private IssueCategory category;
+    private Float storyPoints;
 
     /**
      * Some comment describing the issue update
@@ -71,6 +72,14 @@ public class Issue implements Identifiable {
 
     public void setProject(Project project) {
         this.project = project;
+    }
+
+    public Float getStoryPoints() {
+        return storyPoints;
+    }
+
+    public void setStoryPoints(Float storyPoints) {
+        this.storyPoints = storyPoints;
     }
 
     public Integer getDoneRatio() {
